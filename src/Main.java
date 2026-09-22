@@ -1,6 +1,7 @@
 public class Main {
     public static void main(String[] args){
-        BuddyInfo buddy = new BuddyInfo("Tom", "Carleton", 613);
+        System.out.println("Address Book");
+        BuddyInfo buddy = new BuddyInfo("Sajana", "Carleton", 613);
         AddressBook addressBook = new AddressBook();
         addressBook.addBuddy(buddy);
         addressBook.removeBuddy(buddy);
