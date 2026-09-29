@@ -2,29 +2,33 @@ public class BuddyInfo {
 
     private String name;
     private String address;
-    private int phonenumber;
+    private String phoneNumber;
 
     public BuddyInfo() {
         this.name = "Sajana";
         this.address = "idk";
-        this.phonenumber = 1111111111;
+        this.phoneNumber = "1111111111";
     }
 
-    public BuddyInfo(String name, String address, int phonenumber) {
+    public BuddyInfo(String name, String address, String phoneNumber) {
         this.name = name;
         this.address = address;
-        this.phonenumber = phonenumber;
+        this.phoneNumber = phoneNumber;
     }
 
     public String getName() {
         return name;
     }
+
     public String getAddress() {
         return address;
     }
-    public int getPhonenumber() {return phonenumber; }
 
-    static void main() {
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public static void main(String[] args) {
         BuddyInfo buddyInfo = new BuddyInfo();
         System.out.println("Hello " + buddyInfo.name);
     }
